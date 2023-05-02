@@ -14,12 +14,11 @@ const HomePage = () => {
     const playingRef = useRef(isPlaying)
     playingRef.current = isPlaying
     const urlForBigImage = document.getElementById("displayCard")
-    //console.log(urlForBigImage)
     const imagesdata = jsonData.articles
     const timeerId = useRef<boolean | null>(null)
-    console.log(counter)
+   
 
-    useEffect(() => {
+<!--     useEffect(() => {
         const intervalID = setInterval(() => {
                 if(counter+4 === imagesdata.length - 1){
                    setCounter(0)
@@ -33,7 +32,7 @@ const HomePage = () => {
             clearInterval(intervalID);
           };
 
-    }, [isPlaying])
+    }, [isPlaying]) -->
     
 
     const RightArrowHandler = () => {
