@@ -105,4 +105,3 @@ const HomePage = () => {
 }
 
 export default HomePage;
-{/* <span onClick={() => handlePlaybtn() }><PlayPause /></span> */}
