@@ -1,48 +1,56 @@
-*{
-  margin: 0;padding: 0;box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.App{
+
+.App {
   width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.main{
-    width: 80%;
-    height: 90%;
-    padding: 2px 10px;
-    display: grid;
-    grid-template-columns: 4fr 2fr;
-    column-gap: .7rem;
+
+.main {
+  width: 80%;
+  height: 90%;
+  padding: 2px 10px;
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  column-gap: .7rem;
 }
-.section{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-}
-.text h2{
-  width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-transform: capitalize;
-}
-aside{
+
+.section {
   display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
 }
-.smallImageCard{
+
+.text h2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.smallImageCard {
   width: 9rem;
   height: 6.5rem;
 }
 
-.dicription{
+.dicription {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,24 +59,29 @@ aside{
   line-height: 20px;
 
 }
-.aside{
-  background-color:rgb(32, 115, 126);
+
+.aside {
+  background-color: rgb(32, 115, 126);
 }
-.homediv{
+
+.homediv {
   display: flex;
   overflow: hidden;
 }
-.img{
+
+.img {
   width: 14rem;
   display: block;
   padding: 2px 10px;
 }
-.bigImage{
+
+.bigImage {
   width: 100%;
-    padding: 2rem;
-    border-radius: 70px;
+  padding: 2rem;
+  border-radius: 70px;
 }
-.sectionDiv2{
+
+.sectionDiv2 {
   width: 95%;
   height: 80%;
   background: yellow;
@@ -80,19 +93,23 @@ aside{
   align-items: center;
   position: relative;
 }
-.asideDiv2 svg{
+
+.asideDiv2 svg {
   font-size: 60px;
 }
-.arrow svg{
+
+.arrow svg {
   font-size: 45px;
 }
-.sliderCardImage{
+
+.sliderCardImage {
   width: 100%;
   height: 100%;
   border-radius: 50%;
 
 }
-.sliderCard{
+
+.sliderCard {
   width: 6rem;
   background-color: blueviolet;
   aspect-ratio: 1;
@@ -102,22 +119,89 @@ aside{
   align-content: space-around;
   justify-content: center;
 }
-.arrowKeys{
+
+.arrowKeys {
   position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: space-between;
-    align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
   }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 95%;
+  }
+
+  .bigImage {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 70px;
+  }
+
+  .arrow svg {
+    font-size: 74px;
+  }
+
+  .sliderCard {
+    width: 4rem;
+  }
+
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .main {
+    width: 100%;
+    height: 80%;
+  }
+
+  .arrow svg {
+    font-size: 74px;
+  }
+
+  .sliderCard {
+    width: 4rem;
+  }
+
+}
+
+@media only screen and (max-width: 700px) {
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 95%;
+  }
+
+  .bigImage {
+    padding: 0.5rem;
+  }
+
+  .sectionDiv2 {
+    height: 100px;
+  }
+
+  .arrow svg {
+    font-size: 74px;
+  }
+
+  .sliderCard {
+    width: 4rem;
+  }
+
 }
 
 
@@ -125,6 +209,7 @@ aside{
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
